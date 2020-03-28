@@ -147,91 +147,123 @@ namespace HomeWork4
             
             //4.
             
-        //    int a = int.Parse(Console.ReadLine()), b = int.Parse(Console.ReadLine()), c = int.Parse(Console.ReadLine()),d,e,f;
-           
-        //     if(a < b && b < c ){
-        //         d = a;
-        //         a = c;
-        //         b = b;
-        //         c = d;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
-        //     else if(a > b && b > c){
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
-        //     else if(a>b && b<c){
-        //         d = a;
-        //         e = b;
-        //         f = c;
+           int a = int.Parse(Console.ReadLine()), b = int.Parse(Console.ReadLine()), c = int.Parse(Console.ReadLine()),d,e,f;
+           //int a = 2, b = 1, c =3,d,e,f;
+            if(a < b && b < c ){
+                d = a;
+                a = c;
+                b = b;
+                c = d;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+            else if(a > b && b > c){
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+            else if(a > b && b < c && a < c){
+                d = a;
+                e = b;
+                f = c;
 
-        //         a = d;
-        //         b = f;
-        //         c = e;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
+                a = f;
+                b = d;
+                c = e;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+            else if(a>b && b<c){
+                d = a;
+                e = b;
+                f = c;
 
-        //     else if(a < b && b > c && a < c){
-        //         d = a;
-        //         e = b;
-        //         f = c;
+                a = d;
+                b = f;
+                c = e;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
 
-        //         a = e;
-        //         b = f;
-        //         c = d;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
-        //     else if(a < b && b > c && a > c){
-        //         d = a;
-        //         e = b;
-        //         f = c;
 
-        //         a = e;
-        //         b = d;
-        //         c = f;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
-        //     else if(a > b && b < c && a > c){
-        //         d = a;
-        //         e = b;
-        //         f = c;
+            else if(a < b && b > c && a < c){
+                d = a;
+                e = b;
+                f = c;
 
-        //         a = d;
-        //         b = f;
-        //         c = e;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
+                a = e;
+                b = f;
+                c = d;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+            else if(a < b && b > c && a > c){
+                d = a;
+                e = b;
+                f = c;
 
-        //     else if(a <= b && b < c){ 
-        //         d = a;
-        //         e = b;
-        //         f = c;
+                a = e;
+                b = d;
+                c = f;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+            else if(a > b && b < c && a > c){
+                d = a;
+                e = b;
+                f = c;
 
-        //         a = f;
-        //         b = e;
-        //         c = d;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
+                a = d;
+                b = f;
+                c = e;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
 
-        //     else if(a < b && b >= c){ 
-        //         d = a;
-        //         e = b;
-        //         f = c;
+            else if(a <= b && b < c){ 
+                d = a;
+                e = b;
+                f = c;
 
-        //         a = f;
-        //         b = e;
-        //         c = d;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
-        //     else if(a <= b && b >= c){ 
-        //         d = a;
-        //         e = b;
-        //         f = c;
+                a = f;
+                b = e;
+                c = d;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
 
-        //         a = f;
-        //         b = e;
-        //         c = d;
-        //         Console.WriteLine($"{a} >= {b} >= {c}");
-        //     }
+            else if(a < b && b > c && a == c){ 
+                d = a;
+                e = b;
+                f = c;
+
+                a = e;
+                b = f;
+                c = d;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+
+            else if(a <= b && b >= c){ 
+                d = a;
+                e = b;
+                f = c;
+
+                a = f;
+                b = e;
+                c = d;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+            else if(a < b && b >= c){ 
+                d = a;
+                e = b;
+                f = c;
+
+                a = f;
+                b = e;
+                c = d;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
+            else if(a > b && b == c && a > c){ 
+                d = a;
+                e = b;
+                f = c;
+
+                a = d;
+                b = e;
+                c = f;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
             
 
         }
