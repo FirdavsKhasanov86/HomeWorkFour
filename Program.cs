@@ -233,6 +233,16 @@ namespace HomeWork4
                 c = d;
                 Console.WriteLine($"{a} >= {b} >= {c}");
             }
+             else if(a == b && b > c && a > c){ 
+                d = a;
+                e = b;
+                f = c;
+
+                a = d;
+                b = e;
+                c = f;
+                Console.WriteLine($"{a} >= {b} >= {c}");
+            }
 
             else if(a <= b && b >= c){ 
                 d = a;
@@ -264,7 +274,6 @@ namespace HomeWork4
                 c = f;
                 Console.WriteLine($"{a} >= {b} >= {c}");
             }
-            
 
         }
     }
